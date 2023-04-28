@@ -10,8 +10,8 @@
 
 /* Estilos gerais do header */
 header{
-  background-color: var(--heading-color);
-  padding: 1.6vh;
+  background-color: var(--color-navy);
+  padding: 5px;
   font-family: starjedi;
 }
 
@@ -29,24 +29,20 @@ menu > ul > li {
 
 menu > ul > li > a{
   text-decoration: none;
-  color: var(--font-color);
+  color: var(--color-white);
   margin-left: 3vh;
 }
 
 menu > ul > li > a:hover{
-  background-color: white;
-  color: var(--heading-color);
+  background-color: var(--color-orange);
   padding: 1vh;
   border-radius: 15px;
   transition: 0.3s;
 }
 
-body{
-  background-color: aqua;
-}
-
 menu > ul{
   list-style-type: none;
+  margin-left: 20%;
 }
 
 

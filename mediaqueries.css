@@ -13,11 +13,9 @@
 
 @media screen and (max-width: 768px) {
 
-  header{
-    background-color: var(--heading-color);
-    padding: 1.6vh;
-    font-family: starjedi;
-    font-size: 1.5vh;
+header{
+  background-color: var(--color-navy);
+  padding: 5px;
 }
 
 #burguer{
@@ -80,8 +78,12 @@ nav{
     display: none;
 }
 
+  main{
+    padding-top: 0px;
+  }
+
     .about-us {
-      margin: 20px 0px;
+      margin: 0px 0px 20px 0px;
       flex-direction: column;
       align-items: center;
     }
