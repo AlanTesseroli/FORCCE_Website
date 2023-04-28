@@ -9,76 +9,45 @@
 
 
 /* Estilos gerais do header */
-header {
-  background-color: var(--color-white);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+header{
+  background-color: var(--heading-color);
+  padding: 1.6vh;
+  font-family: starjedi;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-  height: 50px;
-}
-
-.menu-toggle {
+#burguer{
   display: none;
 }
 
-.menu-toggle input {
-  display: none;
-}
-
-.menu-toggle span {
+menu{
   display: block;
-  width: 25px;
-  height: 3px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #333;
-  border-radius: 3px;
 }
 
-.menu-toggle ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  z-index: 999;
-  transform: translateY(-100%);
-  transition: all 0.5s ease-in-out;
+menu > ul > li {
+  display: inline-block;
 }
 
-.menu-toggle ul li {
-  margin: 20px 0;
-}
-
-.menu-toggle ul li a {
+menu > ul > li > a{
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 24px;
+  color: var(--font-color);
+  margin-left: 3vh;
 }
 
-.menu-toggle input:checked ~ ul {
-  transform: translateY(0%);
+menu > ul > li > a:hover{
+  background-color: white;
+  color: var(--heading-color);
+  padding: 1vh;
+  border-radius: 15px;
+  transition: 0.3s;
 }
 
+body{
+  background-color: aqua;
+}
+
+menu > ul{
+  list-style-type: none;
+}
 
 
 
