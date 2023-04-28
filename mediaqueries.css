@@ -68,11 +68,6 @@
       margin: 20px 0;
       }
       
-      .container {
-      display: flex;
-      justify-content: space-between;
-      }
-      
       .box {
       flex: 1;
       background-color: var(--color-navy);
@@ -96,6 +91,10 @@
       margin-bottom: 10px;
       }
 
+      .services{
+        margin: 0px 20px;
+      }
+
       .service {
         margin: 0px ;
         text-align: left;
@@ -117,12 +116,7 @@
       text-shadow: var(--color-white) 2px 3px;
       box-shadow: var(--color-orange) 5px 5px;
       }
-      
-      .feedback-item {
-      width: 80%;
-      margin: 20px 0;
-      }
-      
+            
       .feedback-item {
       margin: 20px 0;
       width: 60%;
@@ -166,6 +160,13 @@
 
       .title {
         font-size: 24px;
+      }
+
+      .contact {
+        margin-top: 10px;
+        background-color: var(--color-navy);
+        color: var(--color-white);
+        padding: 50px;
       }
 
       .contact-form form input,
