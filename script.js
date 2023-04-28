@@ -1,3 +1,23 @@
+window.onload = function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navigations = document.querySelector('nav ul');
+  
+    hamburgerMenu.addEventListener('click', function() {
+        navigations.classList.toggle('menu-active');
+    });
+  
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    if (mediaQuery.matches) {
+        navigations.style.display = 'none';
+        hamburgerMenu.style.display = 'block';
+  
+        hamburgerMenu.addEventListener('click', function() {
+            navigations.classList.toggle('menu-active');
+        });
+    }
+  };
+  
+  
 const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(link => {
@@ -12,20 +32,3 @@ navLinks.forEach(link => {
         });
     });
 });
-
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navigations = document.querySelector('nav ul');
-
-hamburgerMenu.addEventListener('click', function() {
-    navigations.classList.toggle('menu-active');
-});
-
-const mediaQuery = window.matchMedia('(max-width: 768px)');
-if (mediaQuery.matches) {
-    navigations.style.display = 'none';
-    hamburgerMenu.style.display = 'block';
-    
-    hamburgerMenu.addEventListener('click', function() {
-        navigations.classList.toggle('menu-active');
-    });
-}
