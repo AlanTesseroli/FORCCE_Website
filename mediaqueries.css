@@ -13,57 +13,28 @@
 
 @media screen and (max-width: 768px) {
 
-  #burguer{
+  .menu-toggle {
     display: block;
-    color: white;
-    text-align: center;
-    padding: 10px;
     cursor: pointer;
-}
+  }
 
-#burguer:hover{
-    border-radius: 30px;
-    background-color: rgb(255, 255, 255);
-    color: black;
-}
-
-menu{
+  nav ul {
     display: none;
-}
+  }
 
-#itens{
-    margin: 0px;
-    padding: 0px;
-}
-
-menu > ul{
-    margin: 0px;
-    padding: 0px;
-}
-
-menu > ul > li{
-    display: block;
-    text-align: center;
-}
-
-menu > ul > li > a{
-    
-    margin-left: 0px;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    border-top: 2px solid #ffffff;
-}
-
-menu > ul > li > a:hover{
-    background-color: white;
-    color: var(--heading-color);
-    padding: 1vh;
-    border-radius: 15px;
-    transition: 0.3s;
-}
+  nav.active ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 999;
+    transform: translateY(0%);
+  }
 
 
 

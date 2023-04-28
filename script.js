@@ -1,20 +1,9 @@
-window.onload = function() {
-    const hamburgerMenu = document.querySelector('#hamburger-link');
-    const navigations = document.querySelector('nav ul');
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const nav = document.querySelector("nav");
 
-    function clickMenu() {
-        navigations.classList.toggle('menu-active');
-    }
-
-    hamburgerMenu.addEventListener('click', toggleMenu);
-    hamburgerMenu.addEventListener('touchstart', toggleMenu);
-
-    const mediaQuery = window.matchMedia('(max-width: 768px)');
-    if (mediaQuery.matches) {
-        navigations.style.display = 'none';
-        hamburgerMenu.style.display = 'block';
-    }
-};
+hamburgerMenu.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
 
 const navLinks = document.querySelectorAll('.nav-link');
 

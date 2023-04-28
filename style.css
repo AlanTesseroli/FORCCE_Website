@@ -21,80 +21,65 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Estilos do logo */
-.logo {
-  display: flex;
-  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-  height: 40px;
-  margin-right: 10px;
+  height: 50px;
 }
 
-/* Estilos da lista de navegação */
-#burguer{
+.menu-toggle {
   display: none;
 }
 
-menu{
+.menu-toggle input {
+  display: none;
+}
+
+.menu-toggle span {
   display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #333;
+  border-radius: 3px;
 }
 
-menu > ul > li {
-  display: inline-block;
-}
-
-menu > ul > li > a{
-  text-decoration: none;
-  color: var(--font-color);
-  margin-left: 3vh;
-}
-
-menu > ul > li > a:hover{
-  background-color: white;
-  color: var(--heading-color);
-  padding: 1vh;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-menu > ul{
-  list-style-type: none;
-}
-
-ul {
+.menu-toggle ul {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 999;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
 }
 
-li {
-  margin: 0 10px;
+.menu-toggle ul li {
+  margin: 20px 0;
 }
 
-a {
-  color: #333;
+.menu-toggle ul li a {
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-a:hover {
-  color: var(--color-orange);
-}
-
-/* Estilos do menu hamburguer */
-#hamburger-menu {
-  display: none;
+  color: #333;
+  font-weight: bold;
   font-size: 24px;
-  cursor: pointer;
 }
+
+.menu-toggle input:checked ~ ul {
+  transform: translateY(0%);
+}
+
+
 
 
 /* Definir o estilo geral do body */
