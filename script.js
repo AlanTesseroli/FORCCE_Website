@@ -2,7 +2,7 @@ window.onload = function() {
     const hamburgerMenu = document.querySelector('#hamburger-link');
     const navigations = document.querySelector('nav ul');
 
-    function toggleMenu() {
+    function clickMenu() {
         navigations.classList.toggle('menu-active');
     }
 
@@ -16,12 +16,10 @@ window.onload = function() {
     }
 };
 
-
-
 const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(link => {
-    link.addEventListener('touchstart', event => {
+    link.addEventListener('click', event => {
         event.preventDefault();
         const targetId = link.getAttribute('href'); 
         const targetSection = document.querySelector(targetId); 

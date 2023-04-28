@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
 
     <title>FORCCE - Engenharia de Máquinas</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
   <header>
 
 
     <nav>
       <div class="logo"><a href="#about-us" class="nav-link"><img src="images/headerimg.png" alt="Logo da Empresa"></a></div>
-      <ul>
-        <li><a href="#about-us" class="nav-link">Início</a></li>
-        <li><a href="#about" class="nav-link">Sobre</a></li>
-        <li><a href="#services" class="nav-link">Serviços</a></li>
-        <li><a href="#contact" class="nav-link">Contato</a></li>
-      </ul>
-      <div class="hamburger-menu">
-        <a id="hamburger-link" onclick="toggleMenu()">&#9776;</a>
-      </div>
-      
+
+      <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+
+      <menu id="itens">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="historia.html">Historia</a></li>
+              <li><a href="portfolio.html">Portifolio</a></li>
+              <li><a href="contato.html">Contato</a></li>
+          </ul>
+      </menu>
+
     </nav>
 
     

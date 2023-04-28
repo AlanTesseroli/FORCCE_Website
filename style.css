@@ -38,7 +38,35 @@ nav {
 }
 
 /* Estilos da lista de navegação */
+#burguer{
+  display: none;
+}
 
+menu{
+  display: block;
+}
+
+menu > ul > li {
+  display: inline-block;
+}
+
+menu > ul > li > a{
+  text-decoration: none;
+  color: var(--font-color);
+  margin-left: 3vh;
+}
+
+menu > ul > li > a:hover{
+  background-color: white;
+  color: var(--heading-color);
+  padding: 1vh;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+menu > ul{
+  list-style-type: none;
+}
 
 ul {
   display: flex;
@@ -62,11 +90,12 @@ a:hover {
 }
 
 /* Estilos do menu hamburguer */
-.hamburger-menu {
+#hamburger-menu {
   display: none;
   font-size: 24px;
   cursor: pointer;
 }
+
 
 /* Definir o estilo geral do body */
 body {
