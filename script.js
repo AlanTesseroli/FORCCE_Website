@@ -2,7 +2,7 @@ window.onload = function() {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const navigations = document.querySelector('nav ul');
   
-    hamburgerMenu.addEventListener('click', function() {
+    hamburgerMenu.addEventListener('touchstart', function() {
         navigations.classList.toggle('menu-active');
     });
   
@@ -11,17 +11,18 @@ window.onload = function() {
         navigations.style.display = 'none';
         hamburgerMenu.style.display = 'block';
   
-        hamburgerMenu.addEventListener('click', function() {
+        hamburgerMenu.addEventListener('touchstart', function() {
             navigations.classList.toggle('menu-active');
         });
     }
   };
   
-  
+
+
 const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(link => {
-    link.addEventListener('click', event => {
+    link.addEventListener('touchstart', event => {
         event.preventDefault();
         const targetId = link.getAttribute('href'); 
         const targetSection = document.querySelector(targetId); 
