@@ -13,9 +13,13 @@
 </head>
 
 <body onresize="mudouTamanho()">
+  
   <header>
-      <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
 
+    <img src="images/headerimg.png" alt="">
+
+
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
       <menu id="itens">
           <ul>
               <li><a href="#about-us" class="nav-link">Home</a></li>
@@ -79,22 +83,22 @@
             <div class="image-block">
               <img src="images/portifolio/1.jpeg" alt="Imagem 1">
               <div class="image-overlay">
-                <h3>Título da Imagem 1</h3>
-                <p>Descrição da imagem 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sagittis, dui in dapibus efficitur, tortor quam porta nulla, nec rhoncus sapien arcu et quam.</p>
+                <h3>Construção de escadas de aço</h3>
+                <p> Com anos de experiência em design e engenharia, nossos engenheiros desenvolvem projetos detalhados e precisos, levando em consideração as necessidades e preferências dos nossos clientes. </p>
               </div>
             </div>
             <div class="image-block">
               <img src="images/portifolio/4.jpeg" alt="Imagem 2">
               <div class="image-overlay">
-                <h3>Título da Imagem 2</h3>
-                <p>Descrição da imagem 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sagittis, dui in dapibus efficitur, tortor quam porta nulla, nec rhoncus sapien arcu et quam.</p>
+                <h3>Equipamentos agrícolas</h3>
+                <p>Nosso time de engenheiros de máquinas é especializada no desenvolvimento de equipamentos agrícolas manuais, projetados para aumentar a eficiência, produtividade e segurança dos trabalhos no campo.</p>
               </div>
             </div>
             <div class="image-block">
               <img src="images/portifolio/8.jpeg" alt="Imagem 3">
               <div class="image-overlay">
-                <h3>Título da Imagem 3</h3>
-                <p>Descrição da imagem 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sagittis, dui in dapibus efficitur, tortor quam porta nulla, nec rhoncus sapien arcu et quam.</p>
+                <h3>Equipamentos Personalizados</h3>
+                <p>Nossa equipe trabalha no desenvolvimento de novos equipamentos para diversas indústrias. Com nossa expertise em design e engenharia, criamos equipamentos mais eficientes e diversos tipos de produção, garantindo a qualidade e segurança dos produtos.</p>
               </div>
             </div>
           </section>
@@ -162,11 +166,11 @@
           <section class="contact" id="contact">
             <div class="contact-form">
               <h2>Contato</h2>
-              <form action="">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Mensagem"></textarea>
-                <a href=""mailto:engenhariaLeandro83@gmail.com?subject=Nome da mensagem&body=Olá, gostaria de enviar uma mensagem.><button type="submit">Enviar</button></a>
+              <form id="my-form">
+                <input type="text" placeholder="Nome" required id="subject">
+                <input type="email" placeholder="Email" required id="body">
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
               </form>
             </div>
             <div class="contact-info">

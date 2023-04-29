@@ -14,6 +14,7 @@
 @media screen and (max-width: 768px) {
 
 header{
+  display: block;
   background-color: var(--color-navy);
   padding: 5px;
 }
@@ -41,9 +42,15 @@ menu{
     padding: 0px;
 }
 
+header img{
+  display: none;
+}
+
 menu > ul{
-    margin: 0px;
-    padding: 0px;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0px;
+  padding: 0px;
 }
 
 menu > ul > li{
@@ -77,6 +84,11 @@ menu > ul{
 nav{
     display: none;
 }
+
+
+
+
+
 
   main{
     padding-top: 0px;
@@ -138,40 +150,6 @@ nav{
         justify-content: center;
         gap: 20px;
       }
-
-      /*
-
-      .image-block {
-        padding: 0px 30px;
-        position: relative;
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-      }
-    
-      .image-overlay {
-        padding: 10px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #023e73da;
-        color: var(--color-white);
-        transform: translateY(100%);
-        transition: transform 0.3s ease;
-      }      
-
-      .services{
-        margin: 30px 0px;
-        padding: 30px 30px;
-      }
-
-      .service {
-        margin: 0px ;
-        text-align: left;
-      }
-
-      */
 
     .feedback {
       display: flex;

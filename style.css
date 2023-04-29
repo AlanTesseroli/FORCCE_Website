@@ -10,9 +10,24 @@
 
 /* Estilos gerais do header */
 header{
+  display: flex;
+  align-items: center;
   background-color: var(--color-navy);
   padding: 5px;
-  font-family: starjedi;
+}
+
+header img{
+  margin-left: 30px;
+  justify-content: space-between;
+  width: 150px;
+  order: 1;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#itens{
+  order: 2;
 }
 
 #burguer{
@@ -25,6 +40,7 @@ menu{
 
 menu > ul > li {
   display: inline-block;
+  margin-right: 20px;
 }
 
 menu > ul > li > a{
@@ -41,8 +57,9 @@ menu > ul > li > a:hover{
 }
 
 menu > ul{
-  list-style-type: none;
-  margin-left: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 
@@ -240,12 +257,12 @@ main{
 
 .image-overlay {
   position: absolute;
+  padding: 15px;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: #023e73da;
   color: var(--color-white);
-  padding: 20px;
   transform: translateY(100%);
   transition: transform 0.3s ease;
 }
@@ -259,6 +276,8 @@ main{
 }
 
 .image-overlay p {
+  text-align: justify;
+  width: 90%;
   font-size: 14px;
 }
 

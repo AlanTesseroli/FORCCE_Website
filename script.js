@@ -1,5 +1,5 @@
 function mudouTamanho(){
-    if (window.innerWidth >= 750){
+    if (window.innerWidth >= 769){
         itens.style.display = "block"
     }
     else{
@@ -31,3 +31,13 @@ navLinks.forEach(link => {
         });
     });
 });
+
+document.getElementById("my-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    const to = "engenhariaLeandro83@gmail.com";
+    const subject = document.getElementById("subject").value;
+    const body = document.getElementById("body").value;
+    
+    window.location.href = "mailto:" + to + "?subject=" + subject + "&body=" + body;
+  });
