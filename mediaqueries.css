@@ -105,13 +105,8 @@ nav{
       }
       
       .box {
-      flex: 0 0 auto;
-      width: 80%;
-      margin: 20px 0;
-      }
-      
-      .box {
       flex: 1;
+      width: 80%;
       background-color: var(--color-navy);
       color: var(--color-white);
       padding: 20px;
@@ -123,11 +118,22 @@ nav{
       }
       
       .box:hover {
+      width: 80%;
       transform: translateY(-5px);
       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
       background-color: var(--color-blue);
       }
       
+      .image-overlay {
+        position: absolute;
+        width: 90%;
+        background-color: #023e73da;
+        color: var(--color-white);
+        padding: 20px;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+      }      
+
       .emoji {
       font-size: 36px;
       margin-bottom: 10px;
