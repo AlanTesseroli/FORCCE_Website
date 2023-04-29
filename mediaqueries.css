@@ -131,19 +131,30 @@ nav{
       margin-bottom: 10px;
       }
 
+      .image-section {
+        margin: 40px 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      /*
+
       .image-block {
         padding: 0px 30px;
         position: relative;
         width: 100%;
         max-width: 400px;
         height: auto;
-        overflow: hidden;
       }
-
+    
       .image-overlay {
-        margin: 0px 30px;
+        padding: 10px;
         position: absolute;
-        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
         background-color: #023e73da;
         color: var(--color-white);
         transform: translateY(100%);
@@ -159,6 +170,8 @@ nav{
         margin: 0px ;
         text-align: left;
       }
+
+      */
 
     .feedback {
       display: flex;
