@@ -166,13 +166,17 @@
           <section class="contact" id="contact">
             <div class="contact-form">
               <h2>Contato</h2>
-              <form id="my-form">
-                <input type="text" placeholder="Nome" required id="subject">
-                <input type="email" placeholder="Email" required id="body">
-                <textarea placeholder="Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
+              <!-- Formulário de contato -->
+              <form action="processar_formulario.php" method="POST">
+                <input type="text" placeholder="Nome" required name="nome">
+                <input type="email" placeholder="Email" required name="email">
+                <textarea placeholder="Mensagem" required name="mensagem"></textarea>
+                <button type="submit" name="submit">Enviar</button>
               </form>
             </div>
+            
+            
+            
             <div class="contact-info">
               <h2>Informações</h2>
               <div class="info-item">
@@ -189,6 +193,9 @@
                 <a href="https://www.instagram.com/xxxx/" target="_blank">@xxx</a>
               </div>
             </div>
+            
+            
+            
             <div class="contact-map">
               <h2>Localização</h2>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.0389695464187!2d-51.98863419999999!3d-26.4866901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e5ab48cc01506f%3A0x12e8cbd44e7fe3a2!2sUNIASSELVI!5e0!3m2!1spt-BR!2sbr!4v1709594914987!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
